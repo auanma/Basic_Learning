@@ -8,12 +8,14 @@ int main(){
 
     printf("Enter number >>>");
     scanf("%d",&quantity);
-
+    
+    if(quantity<=10){
     printf("======Input======\n");
     for(i=1;i<=quantity;i++){
         printf("Enter Text %d : ",i);
         scanf("%s",word[i-1]);
     }
+    
     printf("\n======Output======\n");
 
     for(i=0;i<quantity;i++){
@@ -21,6 +23,9 @@ int main(){
     printf("%s : %d\n",word[i],len);
     }
 
+    }else{
+        printf(" Your input is more than size of array ");
+    }
 
     return 0;
 }
