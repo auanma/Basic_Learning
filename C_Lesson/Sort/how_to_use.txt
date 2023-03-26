@@ -1,0 +1,8 @@
+
+----------command----------
+
+sort test.txt
+
+run on cmd only and must open directory of test.txt file
+
+
